@@ -2,6 +2,17 @@
 
 ## ⚙ Development
 
+# create env file 
+
+###  example  value
+
+ETHERSCAN_API_KEY=ABC123ABC123ABC123ABC123ABC123ABC1
+PRIVATE_KEY= fe454ae7b8c01b307e3b65143805978cf009434f5f02ca571a299ff74c425946
+BTTC_RPC_URL=https://pre-rpc.bt.io/
+DEPLOYMENT_CONTEXT=bttc
+
+
+
 Install foundry if you don't have one:
 ```shell
 # install foundry

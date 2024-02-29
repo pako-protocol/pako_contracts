@@ -19,7 +19,7 @@ contract UpgradeNewbieVillaTest is CommonTest {
 
     function setUp() public {
         // create and select a fork from crossbell at block 46718115
-        vm.createSelectFork(vm.envString("CROSSBELL_RPC_URL"), 46718115);
+        vm.createSelectFork(vm.envString("BTTC_RPC_URL"), 46718115);
     }
 
     function testCheckSetupState() public {
@@ -42,7 +42,7 @@ contract UpgradeNewbieVillaTest is CommonTest {
 
     function testUpgradeNewbieVillaWithStorageCheck() public {
         // create and select a fork from crossbell at block 46718115
-        vm.createSelectFork(vm.envString("CROSSBELL_RPC_URL"), 46718115);
+        vm.createSelectFork(vm.envString("BTTC_RPC_URL"), 46718115);
 
         NewbieVilla newImpl = new NewbieVilla();
         // upgrade

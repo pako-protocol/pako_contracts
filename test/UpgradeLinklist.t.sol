@@ -18,7 +18,7 @@ contract UpgradeLinklistTest is CommonTest {
 
     function setUp() public {
         // create and select a fork from crossbell at block 41621719
-        vm.createSelectFork(vm.envString("CROSSBELL_RPC_URL"), 41621719);
+        vm.createSelectFork(vm.envString("BTTC_RPC_URL"), 41621719);
     }
 
     function testCheckSetupState() public {
@@ -94,7 +94,7 @@ contract UpgradeLinklistTest is CommonTest {
 
     function testUpgradeLinklistWithStorageCheck() public {
         // create and select a fork from crossbell at block 42914883
-        vm.createSelectFork(vm.envString("CROSSBELL_RPC_URL"), 42914883);
+        vm.createSelectFork(vm.envString("BTTC_RPC_URL"), 42914883);
 
         Linklist newImpl = new Linklist();
         // upgrade
